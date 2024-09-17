@@ -7,33 +7,36 @@ $('.slider').slick({
     autoplaySpeed: 2000,
     responsive: [
         {
-            breakpoint: 998,
+            breakpoint: 1440,
             settings: {
-                arrows: false,
-                centerMode: true,
-                centerPadding: '40px',
-                slidesToShow: 2
-            }
+                slidesToShow: 3,
+                slidesToScroll: 3,
+                infinite: true,
+                dots: true,
+            },
         },
         {
-            breakpoint: 890,
+            breakpoint: 992,
             settings: {
-                arrows: false,
-                centerMode: true,
-                centerPadding: '30px',
-                slidesToShow: 1
-            }
+                slidesToShow: 2,
+                slidesToScroll: 2,
+            },
         },
         {
-            breakpoint: 480,
+            breakpoint: 768,
             settings: {
-                arrows: false,
-                centerMode: true,
-                centerPadding: '10px',
-                slidesToShow: 1
-            }
-        }
-    ]
+                slidesToShow: 1,
+                slidesToScroll: 1,
+            },
+        },
+        {
+            breakpoint: 576,
+            settings: {
+                slidesToShow: 1,
+                slidesToScroll: 1,
+            },
+        },
+    ],
 });
 $('.footer-slider').slick({
     slidesToShow: 2,
